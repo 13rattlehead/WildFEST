@@ -1,0 +1,102 @@
+#slider {
+    position: relative;
+    text-align: right;
+    top: 10px;
+    margin: 0 auto;     
+}
+#slides article{
+    width: 20%;
+    float: left;
+
+}
+#slider .image {
+    width: 50%;
+    line-height: 0;
+}
+#overflow {
+    width: 100%;
+    overflow: hidden;
+}
+article img {
+    width: 100%;
+}
+#desktop:cheked ~ #slider {
+    max-width: 960px;  
+} 
+#switch1:cheked ~ #controls label:nth-child(5),
+#switch2:cheked ~ #controls label:nth-child(1),
+#switch3:cheked ~ #controls label:nth-child(2),
+#switch4:cheked ~ #controls label:nth-child(3),
+#switch5:cheked ~ #controls label:nth-child(4) {
+    background: url(left.png) no-repeat;
+    float: left;
+    margin: 0 0 0 -84px;
+    display: block;
+    height: 68px;
+    width: 68px;    
+}
+
+#switch1:cheked ~ #controls label:nth-child(5),
+#switch2:cheked ~ #controls label:nth-child(1),
+#switch3:cheked ~ #controls label:nth-child(2),
+#switch4:cheked ~ #controls label:nth-child(3),
+#switch5:cheked ~ #controls label:nth-child(4) {
+    background: url(right.png) no-repeat;
+    float: right;
+    margin: 0 -84 0 0px;
+    display: block;
+    height: 68px;
+    width: 68px;    
+}
+label, {
+    cursor: pointer;
+}
+.all input{
+    display: none;
+}
+#switch1:checked ~ #slides .image {
+    margin-left: 0;
+}
+#switch2:checked ~ #slides .image{
+    margin-left: -100%;
+}
+#switch3:checked ~ #slides .image {
+    margin-left: -200%;
+}
+#switch4:checked ~ #slides .image {
+    margin-left: -300%;
+}
+#switch5:checked ~ #slides .image {
+    margin-left: -400%;
+}
+#controls {
+    margin: -25% 0 0 0;
+    width: 100%;
+    height: 50px;
+}
+#active label{
+    border-radius: 10px;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: #bbb ;
+}
+#active {
+    margin: 23% 0 0 ;
+    text-align: center;
+}
+#active label:hover{
+    background: #76c8ff;
+    border-color: #777;
+}
+#slides .image{
+    transition: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+#controls label:hover{
+    opacity: 0.6;
+    transition: opacity 0.2s ease-out;
+}
+.image {
+    width: 540px;
+    height: 359px;
+}

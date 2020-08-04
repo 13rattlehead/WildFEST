@@ -1,0 +1,171 @@
+body {
+    padding: 0%;
+    margin: 0%;
+    width: 100%;
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+    font-size: medium;
+    background: url(https://pbs.twimg.com/media/DhXIcJhXcAUrind.jpg:large) no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+.header {
+    width: 100%;
+    height: 13vh;
+    background-color: #6e6e6e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo {
+    margin: 2px;
+    padding: 5px;
+}
+ul,
+li {
+    display: block;
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+a {
+    text-decoration: none;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    font-size: 18 px;
+    margin: 50px 35px;
+    color: white;
+}
+.menu li a {
+    color: #fff;
+    padding-bottom: 2px;
+    padding-top: 2px;
+}
+
+.fisrt {
+    padding-left: 50%;
+}
+
+.menu li.active a {
+    color: #22a9c1;
+}
+
+.menu li.active a,
+.menu li a:hover {
+    color: #22a9c1;
+    font-size: 27px;
+    transition: all 0.5s ease;
+}
+
+.auth {
+    display: inline-flex;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    color: white;
+}
+
+.name {
+    display: flex;
+    position: relative;
+    float: right;
+    color: whitesmoke;
+    font-size: 15px;
+}
+
+.name:hover {
+    color: #a3a792;
+    font-size: 18px;
+    transition: all 0.5s ease;
+}
+section{
+    min-height: 100vh;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    width: 120vh;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.container .card {
+    position: relative;
+}
+.container .card .face {
+    width: 70% ;
+    height: 50%;
+    transition: 0.5s;
+}
+.container .card .face.face1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+}
+.container .card:hover .face.face1 {
+    transform: translateY(0);
+}
+.container .card .face.face1 .content {
+    opacity: 0.85;
+    transition:0.5s ;
+}
+.container .card:hover .face.face1 .content {
+    opacity: 1;
+}
+.container .card .face.face1 .content img {
+    max-width: 30vh;
+}
+.container .card .face.face1 .content h3 {
+    margin: 10px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+}
+.novost {
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    color: #000;
+    border-bottom: 1px solid rgb(197, 197, 197);
+}
+.container .card .face.face2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    transform: translateY(-100px);
+
+}
+.container .card:hover .face.face2 {
+    transform: translateY(0);
+
+}
+.container .card .face.face2 .content p{
+    margin: 0;
+    padding: 0;
+}
+.container .card .face.face2 .content a{
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 100;
+    color:black;
+    border: 1px solid black;
+}
+.container .card .face.face2 .content a:hover {
+    background: #333;
+}

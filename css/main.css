@@ -1,0 +1,73 @@
+ul, li {
+    display: block;
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: small;
+}
+body {
+    background-color: #fff;
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: medium;
+}
+header {
+    height: 15%;
+    background-color: dimgray;
+    margin: 0%;
+    padding: 0%;
+}
+.container {
+    margin: 0%;
+    padding: 0%;
+    width: 1140 px;
+}
+div, p, a, img {
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+.nav {
+    display: flex;
+}
+.menu {
+    display: flex;
+}
+.menu li {
+    font-size: 18 px;
+    margin-right: 100px;
+    margin-top: 90px;
+    float: center;
+
+}
+.menu li a {
+ color: #fff; 
+ padding-bottom: 2px;
+ padding-top: 2px;
+} 
+.menu li.active a{
+  color:#22a9c1;
+}
+.name {
+    color: antiquewhite;
+    font-size: 12px;
+    float: right;
+}
+.first {
+    color: #22a9c1;
+    margin-left: 570px; 
+}   
+.menu li.active a ,
+.menu li a:hover {
+ color: #22a9c1;
+ font-size: 22px;
+ transition: all 0.5s ease;
+}
+.logo {
+    margin-left: 10px;
+}
+.auth {
+    float: right;
+}
