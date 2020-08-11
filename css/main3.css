@@ -180,15 +180,23 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
 .card {
  
     display: flex;
-    flex-direction: column;
     overflow: hidden;
     width: auto;
     max-height: 50%;
+    flex-direction: column;
     height: auto;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column !important;
+    }
 
 }
 .container .card {
@@ -215,7 +223,7 @@ section{
 .container .card:hover .face.face1 {
     transform: translateY(0);
 }
-.container .card .face.face1 .content {
+.container .card .face.face1 .content { 
     opacity: 0.85;
     transition:0.5s ;
 }
@@ -293,7 +301,7 @@ section{
     background: linear-gradient(to bottom, #932197, rgb(77, 9, 187));
     height: 50px;
 }
-{
+/*{
     width: 100%;
     height: auto;
     margin-top: 0px;
@@ -301,7 +309,7 @@ section{
     text-align: center;
     transform: translateY(100px);
     z-index: 1;
-}
+}*/
 
 .social img {
     transform: translateY(100px);

@@ -259,8 +259,15 @@ a {
 }
 .pic1 {
     position: relative;
+    padding: 0px;
+   width: 100%;
+   height: auto;
+}
+.hueta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 10px;
-   
 }
 
 span.title {
@@ -312,7 +319,7 @@ svg rect {
 
 .box1 {
     width: 80%;
-    height: 80vh;
+    min-height: 80vh;
     border-radius: 2%;
     background-color: #fff;
     position: relative;
@@ -324,16 +331,19 @@ svg rect {
 
 
 .content1 {
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 80vh;
+    padding: 5px;
 }
 .content-text {
-    width: 50%;
     padding: 5px;
 }
 .content2 {
     display: grid;
     grid-column: auto;
-    grid-template-columns: repeat(2;40%); 
+    grid-template-columns: 60% 40%; 
 }
 
 .sec2 {
@@ -515,7 +525,6 @@ footer {
     margin-left: 10px;
     height: 65px;
     margin-right: 10px;
-    margin-top: 100px;
     line-height: 65px;
     cursor: pointer;
 }
