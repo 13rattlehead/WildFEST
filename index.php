@@ -35,7 +35,7 @@
     <header id='header' class="header">
         <img class="logo" src="logotype2.png" width="95" height="95" class="logo">
         
-        <nav class="nav">
+        
             <ul class="menu">
                 <li class="active">
                     <a class="first" href="#">home</a>
@@ -54,135 +54,117 @@
             <img src="">
             <a class="name" href="auth.php"><?php echo $_SESSION["username"]; ?></a>
         </div>
-        </nav>
+       
 </header>   
  <main>
- <div class="search-box">
-        <input type="text" class="search-txt" placeholder="Поиск">
-        <a href="#" class="search-btn"><i class="fa fa-search" aria-hidden="true"></i></a>
-        <script src="js/search.js"></script>
-    </div>
         <h1 class="h">Where words fail</h1>
         <h2 class="h2">musik speaks</h2>
 
+
     <section class="sec1">
-
        <div class="box1">
+       <h1 class="zogolovok">
+            NEWS
+        </h1>
 
+            <div class="container">
+                <div class="card">
+                    <div class="face face1">
+                        <div class="content">
+                            <img src="pictures/corey.png" width="auto" height="auto" >
+                            <h3 class="novost"> New slipknot tour</h3>
+                        </div>
+                    </div>
 
-            <h1 class="zogolovok">
-                NEWS
-            </h1>
-
-<div class="grid">
-        <div class="cont">
-        <div class="card">
-                <div class="face face1">
-                    <div class="content">
-                     <img src="pictures/corey.png" >
-                     <h3 class="novost">New slipknot tour</h3>
-                   </div>
+                    <div class="face face2">
+                        <div class="content">
+                            <p>Slipknot annouced new dates of
+                                of american tour</p>
+                            <a href="#">see concerts</a>
+                        </div>
+                    </div>
                 </div>
-                 <div class="face face2">
-                     <div class="content">
-                     <p class="text_news"> Slipknot annouced new dates of
-                         of american tour
-                     </p>
-                     <a href="#">see dates</a>
-                  </div>
-             </div>
-      </div>
-
+                <div class="card">
+                    <div class="face face1">
+                        <div class="content">
+                            <img src="pictures/bmth.png" >
+                            <h3 class="novost">BMTH in ParkLive 2019</h3>
+                        </div>
+                    </div>
     
-
-      <div class="card">
-         <div class="face face1">
-             <div class="content">
-              <img src="pictures/bmth.png" >
-              <h3 class="novost">BMTH in ParkLive 2019</h3>
+                    <div class="face face2">
+                        <div class="content">
+                            <p>Let's remember this wonderful corcert and watch pictures </p>
+                            <a href="#">see concerts </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="face face1">
+                        <div class="content">
+                            <img src="pictures/metallica.png" >
+                            <h3 class="novost">First Metallica's concert 2020</h3>
+                        </div>
+                    </div>
+    
+                    <div class="face face2">
+                        <div class="content">
+                            <p>Hurry up to buy tickets for the first</p>
+                            <a href="#">see concerts </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-         </div>
-          <div class="face face2">
-              <div class="content">
-              <p> Let's remember this wonderful corcert and watch pictures 
-              </p>
-              <a href="#">see pictures</a>
-           </div>
-      </div>
-</div>
 
+            <div class="container">
+                <div class="card">
+                    <div class="face face1">
+                        <div class="content">
+                            <img src="pictures/iron.png" >
+                            <h3 class="novost"> New Iron Maiden Tour 2020</h3>
+                        </div>
+                    </div>
 
+                    <div class="face face2">
+                        <div class="content">
+                            <p>Do yoy wanna old-school fast and heavy metall? We know you need it</p>
+                            <a href="#">see concerts</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="face face1">
+                        <div class="content">
+                            <img src="pictures/macya.png" >
+                            <h3 class="novost">Megadeth annouced dates of thier new album</h3>
+                        </div>
+                    </div>
+    
+                    <div class="face face2">
+                        <div class="content">
+                            <p>Megadeth informed in their instagram about names of new songs and date of new album. We missed the good news.</p>
+                            <a href="#">see dates</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="face face1">
+                        <div class="content">
+                            <img src="pictures/in2.png" >
+                            <h3 class="novost">In Flames 2020 Tour</h3>
+                        </div>
+                    </div>
+    
+                    <div class="face face2">
+                        <div class="content">
+                            <p>In Flames annouced dates of their tour in 2020 and date of coming re-recorded album</p>
+                            <a href="#">see concerts </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-    <div class="card">
-     <div class="face face1">
-     <div class="content">
-      <img src="pictures/metallica.png" >
-      <h3 class="novost">First Metallica's concert 2020</h3>
         </div>
-         </div>
-      <div class="face face2">
-      <div class="content">
-      <p> Hurry up to buy tickets for the first  <br> Metallica's concert in 2020
-      </p>
-      <a href="buy.php?id=1">see dates</a>
-       </div>
-    </div>
-    </div>
-    </div>
-</div>
-
-<div class="grid2">
- <div class="cont">
-   <div class="card">
-    <div class="face face1">
-        <div class="content">
-         <img src="macya.png" >
-         <h3 class="novost">MegaTour 2020</h3>
-       </div>
-    </div>
-     <div class="face face2">
-         <div class="content">
-         <p> Hurry up to buy tickets for the Megadeth's concert
-         </p>
-         <a href="#">see dates</a>
-      </div>
-   </div>
-   </div>
-
-   <div class="card">
-    <div class="face face1">
-        <div class="content">
-         <img src="iron.png" >
-         <h3 class="novost">Iron Maiden Moscow 2020</h3>
-       </div>
-    </div>
-     <div class="face face2">
-         <div class="content">
-         <p> Iron Maiden in Moscow 2020, let's buy tickets !
-         </p>
-         <a href="buy.php?id=2">see dates</a>
-      </div>
-   </div>
-   </div>
-
-   <div class="card">
-    <div class="face face1">
-        <div class="content">
-         <img src="in2.png" >
-         <h3 class="novost">In Flames 2020 Moscow</h3>
-       </div>
-    </div>
-     <div class="face face2">
-         <div class="content">
-         <p> Swedish stars of deth-metal <br> in Moscow and Saint-Petersburg in 2020
-         </p>
-         <a href="#">see dates</a>
-      </div>
-   </div>
-   </div>
-  </div>
-</div>
-    </div>
     </section>
 </main>
     <button class="btn-top"></button>
@@ -191,32 +173,34 @@
     <script src="script.js"></script>
 
     <footer>
-        <img src="logotype.png" class="logofooter">
+    <div>
+        <img src="logotype.png" class="logo_footer">
+    </div>
         <div class="nav_footer">
-                    <a href="index.php">
-                        <div class="basicBox">
-                            home
-                        <svg width="130" height="65" viewBox="0 0 130 65" xmlns="http://www.w3.org/2000/svg">     
-                        <rect x='0' y='0' fill='none' width='130' height='65'/>
+                <a href="index.php">
+                    <div class="basicBox">
+                        <p>home</p>
+                        <svg  viewBox="0 0 130 65" xmlns="http://www.w3.org/2000/svg">     
+                            <rect x='0' y='0' fill='none' width='130' height='65'/>
                         </svg>  
-                        </div>
-                    </a>  
-                    <a href="about.html">
-                        <div class="basicBox">
-                            about
-                        <svg width="130" height="65" viewBox="0 0 130 65" xmlns="http://www.w3.org/2000/svg">     
-                        <rect x='0' y='0' fill='none' width='130' height='65'/>
+                </div>
+                </a>  
+                <a href="about.html">
+                    <div class="basicBox">
+                        <p>about</p>
+                        <svg  viewBox="0 0 130 65" xmlns="http://www.w3.org/2000/svg">     
+                            <rect x='0' y='0' fill='none' width='130' height='65'/>
                         </svg>  
-                        </div>
-                    </a>   
-                    <a href="concerts.php">
-                        <div class="basicBox">
-                            concerts
-                        <svg width="130" height="65" viewBox="0 0 130 65" xmlns="http://www.w3.org/2000/svg">     
-                        <rect x='0' y='0' fill='none' width='130' height='65'/>
+                    </div>
+                </a>   
+                <a href="concerts.php">
+                    <div class="basicBox">
+                        <p>concerts</p>
+                        <svg  viewBox="0 0 130 65" xmlns="http://www.w3.org/2000/svg">     
+                            <rect x='0' y='0' fill='none' width='150' height='45'/>
                         </svg>  
-                        </div>
-                    </a>  
+                    </div>
+                </a>  
         </div> 
 
         <div class="pict">
@@ -230,7 +214,6 @@
 
 
     <button class="btn-top"></button>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/script.js"></script>
 

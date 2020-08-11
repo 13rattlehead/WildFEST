@@ -2,8 +2,7 @@ body {
     padding: 0%;
     margin: 0%;
     width: 100%;
-    height: 720px;
-    min-height: 100vh;
+    height: auto;
     color: #000000;
     font-family: 'Montserrat', sans-serif;
     font-size: medium;
@@ -11,23 +10,25 @@ body {
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
+
 }
 
 .header {
     width: 100%;
-    height: 100px;
+    height: 13vh;
     background-color: #6e6e6e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .logo {
-    margin-left: 8px;
-    margin-top: 10px;
-    width: 80px;
-    height: 80px;
+    margin: 2px;
+    padding: 5px;
     display: block;
     position: absolute;
     top: 0;
-    left: 10px;
+    left: 1vw;
 }
 
 ul,
@@ -50,14 +51,11 @@ a {
     text-decoration: none;
 }
 
-.nav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+
 
 .menu {
     display: flex;
+    width: auto;
 }
 
 .menu li {
@@ -72,9 +70,7 @@ a {
     padding-top: 2px;
 }
 
-.fisrt {
-    padding-left: 50%;
-}
+
 
 .menu li.active a {
     color: #22a9c1;
@@ -132,12 +128,6 @@ a {
     padding-top: 50px;
     padding-left: 10pxs;
 }
-
-.sec2 {
-    margin-top: 350px;
-    display: flex;
-}
-
 .h {
     font-weight: 900;
     color: #fff;
@@ -152,23 +142,24 @@ a {
 
 .sec1 {
     position: relative;
-    height: 1800px;
-    margin-top: 700px;
+    height:auto;
     background-color: #d3d2d2;
-    padding-top: 40px;
     flex-direction: column;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 90vh;
 }
 
 .box1 {
     width: 80%;
-    height: 2000px;
+    height: auto;
+    margin-top: 5vh;
+    border-radius: 2%;
     background-color: #fff;
     position: relative;
-    margin-left: 10%;
-    margin-right: 10%;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .news {
@@ -176,132 +167,119 @@ a {
     font-size: x-large;
     color: #000000;
 }
-
-.flex {
-    flex-direction: row;
-    display: flex;
-    justify-content: space-between;
-    left: 10%;
-    right: 10%;
-}
-
-.grid {
-    display: grid;
-    text-align: center;
-    flex-direction: column;
-    position: relative;
-    height: 750px;
-    justify-content: space-between;
-    bottom: 10;
-}
-
-.cont {
-    display: flex;
-    justify-content: space-between;
-    background-color: white;
-    width: 80%;
-    position: relative;
-    height: 500px;
-}
-
-.cont .card {
-    position: relative;
-}
-
-.card {
-    height: 500px;
-}
-
-.cont .card .face {
-    width: 510px;
-    height: 650px;
-    transition: 0.5s;
-}
-
-.cont .card .face.face1 {
-    position: relative;
-    background-color: #ffffff;
+section{
+    min-height: 10vh;
+    background: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: translateY(100px);
-    z-index: 1;
 }
-
-.cont .card:hover .face.face1 {
-    transform: translateY(0px);
+.container {
+    width: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+.card {
+ 
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: auto;
+    max-height: 50%;
+    height: auto;
 
-.cont .card .face.face1 .content img {
-    opacity: 0.85;
+}
+.container .card {
+    position: relative;
+    width: 70% ;
+    height: auto;
+}
+.container .card .face {
     transition: 0.5s;
 }
-
-.cont .card:hover .face.face1 .content img {
+.container .card .face.face1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+}
+.container .card .face.face1{
+    align-items: center;
+    justify-content: center;
+    width: auto;
+}
+.container .card:hover .face.face1 {
+    transform: translateY(0);
+}
+.container .card .face.face1 .content {
+    opacity: 0.85;
+    transition:0.5s ;
+}
+.container .card:hover .face.face1 .content {
     opacity: 1;
 }
-
-.cont .card .face.face1 .content img {
-    max-width: 25vw;
+.container .card .face.face2 .content {
+    opacity: 0.1;
+    transition: 0.8s;
 }
-
-.cont .card .face.face1 .content h3 {
-    color: #ffffff;
+.container .card:hover .face.face2 .content {
+    opacity: 1;
+}
+.container .card .face.face1 .content img {
+    max-width: 30vh;
+    min-width: 10vh;
+}
+.content {
+    width: 60%;
+    height: 50%;
+}
+.container .card .face.face1 .content h3 {
+    margin: 5px;
+    padding: 0;
+    width: 50%;
+    color: #fff;
     text-align: center;
 }
-
-.cont .card .face.face2 {
+.novost {
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    color: #000;
+    border-bottom: 1px solid rgb(197, 197, 197);
+}
+.container .card .face.face2 {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
-    bottom: 700px;
-    transform: translateY(-50px);
-}
+    transform: translateY(-100px);
 
-.cont .card:hover .face.face2 {
+}
+.container .card:hover .face.face2 {
     transform: translateY(0);
-}
 
-.cont .card .face.face2 .content p {
-    margin: 0px;
-    padding: 0px;
 }
-
-.cont .card .face.face2 .content a {
+.container .card .face.face2 .content p{
+    margin: 0;
+    padding: 0;
+}
+.container .card .face.face2 .content a{
     display: inline-block;
     text-decoration: none;
-    font-weight: 700;
-    color: black;
-    border: 1px solid #000000;
+    font-weight: 100;
+    color:black;
+    border: 1px solid black;
+    transition: ease-in;
 }
-
-.cont .card .face.face2 .content a:hover {
-    background: #525252;
-    color: #fff;
-}
-
-.content {
-    position: relative;
-}
-
-.novost {
-    position: absolute;
-    top: 0;
-    color: #ffffff;
-    left: 5px;
-    border-bottom: 1px solid rgb(197, 197, 197);
-}
-
-.text_news {
-    margin-bottom: 300px;
-}
-
-.face2 {
-    position: relative;
-    top: -250px;
-    left: 5px;
+.container .card .face.face2 .content a:hover {
+    background: #333;
+    color: whitesmoke;
 }
 
 .zogolovok {
@@ -315,17 +293,6 @@ a {
     background: linear-gradient(to bottom, #932197, rgb(77, 9, 187));
     height: 50px;
 }
-
-.grid2 {
-    position: relative;
-    padding-top: 50px;
-    height: auto;
-    display: grid;
-    text-align: center;
-    justify-content: space-between;
-    bottom: 0;
-}
-
 {
     width: 100%;
     height: auto;
@@ -349,7 +316,7 @@ a {
 .btn-top {
     position: fixed;
     bottom: 50px;
-    right: 60px;
+    right: 5vw;
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -375,21 +342,19 @@ a {
 }
 
 footer {
-    background-color: rgb(0, 0, 0);
-    height: auto;
     width: 100%;
-    position: relative;
-    margin-top: auto;
+    background: black;
+    height: auto;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
-.logofooter {
-    width: 98px;
-    height: 80px;
-    position: absolute;
-    padding-top: 5px;
+.logo_footer {
+    position: relative;
+    width: 60%;
+    align-items: center;
+    padding: 8px;
 }
 
 .soc_fooer {
@@ -403,26 +368,26 @@ footer {
 .basicBox {
     color: #fff;
     font-size: medium;
-    text-transform: uppercase;
     text-align: center;
-    width: 130px;
+    justify-content: space-between;
+    text-transform: uppercase;
     position: relative;
-    margin-left: 10px;
-    height: 65px;
-    margin-right: 10px;
-    margin-top: 100px;
-    line-height: 65px;
+    height:auto;
     cursor: pointer;
 }
 
 .nav_footer {
-    width: 30%;
+    width: 25%;
+    max-width: 30%;
     position: relative;
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-between;
 }
-
+.nav_footer a div.basicBox {
+    justify-content: center;
+}
 .nav_social {
     position: absolute;
     align-items: center;
@@ -430,25 +395,20 @@ footer {
     display: flex;
     flex-direction: row;
 }
-
-.nav_social a {
-    margin-right: 10px;
-    padding-top: 150px;
-}
-
 svg {
     position: absolute;
     top: 0;
     left: 0;
 }
-
 svg rect {
     stroke: #536DFE;
     stroke-width: 1;
     transition: 0.8s;
     stroke-dasharray: 400, 0;
 }
-
+div.basicBox p {
+    padding: 9px;
+}
 .basicBox:hover svg rect {
     stroke-width: 5;
     stroke-dasharray: 35, 245;
@@ -456,7 +416,7 @@ svg rect {
 }
 
 .pict {
-    margin-top: 50px;
+    margin-top: 5vh;
 }
 
 .pict a {

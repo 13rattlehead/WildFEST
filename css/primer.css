@@ -169,3 +169,57 @@ section{
 .container .card .face.face2 .content a:hover {
     background: #333;
 }
+footer {
+    width: 100%;
+    background: black;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.logo_footer{
+    position: relative;
+    width: 60%;
+    align-items: center;
+    padding: 5px;
+}
+.basicBox {
+    color: #fff;
+    font-size: medium;
+    text-align: center;
+    justify-content: space-between;
+    width: ;
+    text-transform: uppercase;
+    position: relative;
+    height:auto;
+    cursor: pointer;
+}
+.nav_footer {
+    width: 25%;
+    max-width: 30%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+svg rect {
+    stroke: #536DFE;
+    stroke-width: 1;
+    transition: 0.8s;
+    stroke-dasharray: 400, 0;
+}
+
+.basicBox:hover svg rect {
+    stroke-width: 5;
+    stroke-dasharray: 35, 245;
+    stroke-dashoffset: 38
+}
+div.basicBox p {
+    padding: 9px;
+}
